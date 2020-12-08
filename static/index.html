@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Example</title>
+        <title>Email Upload</title>
     </head>
     <body>
-        <p>This is an example of a simple HTML page with one paragraph.</p>
+        <!-- <p>This is an example of a simple HTML page with one paragraph.</p>
         <button onclick="getRequest()">GET request</button>
         <p id="demo"></p>
-        <button onclick="postRequest()">POST request</button>
+        <button onclick="postRequest()">POST request</button> -->
+        <form enctype="multipart/form-data" action="http://localhost:18080/testpost" method="POST">
+            <input type="file" name="filename">
+            <input type="submit" value="upload">
+        </form>
         <script src="emailUpload.js"></script>
     </body>
 
