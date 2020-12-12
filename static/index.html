@@ -2,15 +2,12 @@
 <html>
     <head>
         <title>Email Upload</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
-        <!-- <p>This is an example of a simple HTML page with one paragraph.</p>
-        <button onclick="getRequest()">GET request</button>
-        <p id="demo"></p>
-        <button onclick="postRequest()">POST request</button> -->
-        <form enctype="multipart/form-data" action="http://localhost:18080/testpost" method="POST">
+        <form enctype="multipart/form-data" action="http://localhost:18080/uploadEmail" method="POST">
             <input type="file" name="filename">
-            <input type="submit" value="upload">
+            <input type="submit" value="upload" disabled>
         </form>
         <script src="emailUpload.js"></script>
     </body>
